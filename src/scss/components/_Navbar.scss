@@ -1,0 +1,62 @@
+.main-nav {
+  background-color: $black;
+  color: $white;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  svg {
+    color: white;
+    height: 42px;
+    width: 35px;
+  }
+  .menu {
+    background-color: $black;
+  }
+
+  .nav-item {
+    cursor: pointer;
+    white-space: nowrap;
+    height: 60px;
+    padding: 0 12px;
+
+    a {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $white;
+      a {
+        color: $black;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    svg {
+      color: $black;
+      height: 53px;
+      width: 53px;
+    }
+    .menu {
+      flex-basis: 60%;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .menu {
+      flex-basis: 40%;
+    }
+  }
+}

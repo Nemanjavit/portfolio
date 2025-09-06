@@ -1,0 +1,23 @@
+.contact {
+  background-color: $black;
+  color: white;
+  padding: 70px 0;
+
+  .social {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    svg {
+      color: white;
+    }
+  }
+  .submit {
+    background-color: white;
+    &:hover {
+      color: black;
+      opacity: 0.9;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+$black: #0b0b0b;
+$gray: #d7d7d7;
+$white: #ffffff;
+$grayish-white: #d7d7d7;
+
+$primary-font: "Raleway", sans-serif;
+
+$font-family-base: $primary-font;
+
+$font-families: (
+  "primary": $primary-font,
+);
+
+$theme-colors: (
+  "dark": $black,
+);
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: 30px,
+  6: $spacer * 4,
+);
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+body {
+  font-family: $primary-font;
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

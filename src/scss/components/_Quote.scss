@@ -1,0 +1,41 @@
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba($black, 0.9);
+
+  .text-content {
+    margin: 140px 38px;
+    position: relative;
+    z-index: 3;
+    color: white;
+  }
+
+  .quote-container {
+    overflow: hidden;
+  }
+
+  img {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @include media-breakpoint-up(lg) {
+    p {
+      max-width: 80%;
+    }
+    img {
+      left: unset;
+      right: 0;
+      transform: translateY(-50%) translateX(-10%) rotate(32deg);
+    }
+  }
+}

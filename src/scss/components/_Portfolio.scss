@@ -1,0 +1,26 @@
+.portfolio {
+  padding: 70px 0;
+
+  .spacer {
+    position: relative;
+    background-image: url("../../../src/assets/portfolioBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hiddenImg {
+    visibility: hidden;
+  }
+
+  .heading {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .portfolio-container {
+    padding: 70px 0;
+  }
+}

@@ -1,0 +1,14 @@
+.aboutMe {
+  background-color: $grayish-white;
+  color: $black;
+  padding: 70px 60px;
+
+  p {
+    text-align: justify;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}
