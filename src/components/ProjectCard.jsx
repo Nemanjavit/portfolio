@@ -1,14 +1,19 @@
 const ProjectCard = ({ project }) => {
   return (
     <div className="col projectCard">
-      <div className="card">
-        <a href={project.liveSite} rel="noreferrer" target="_blank">
-          <img
-            src={project.imgUrl}
-            className="card-img-top"
-            alt="project thumbnail"
-          />
+      <div className="card h-100">
+        <a
+          className="card-link"
+          href={project.liveSite}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            style={{ backgroundImage: `url(${project.imgUrl})` }}
+            className="card-image-container"
+          ></div>
         </a>
+
         <div className="card-body">
           <h5 className="card-title my-3 text-xl fw-bold">{project.name}</h5>
 

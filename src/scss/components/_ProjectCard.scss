@@ -2,7 +2,18 @@
   .card-text {
     text-align: justify;
   }
-  .card-img-top:hover {
+
+  .card-link:hover {
     opacity: 0.95;
+  }
+
+  .card-image-container {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      visibility: hidden;
+    }
   }
 }

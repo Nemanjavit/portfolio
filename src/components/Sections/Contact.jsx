@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -21,16 +22,17 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Email sent!");
+          e.target.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text, error);
+          toast.error(error.text);
         }
       );
   };
 
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <h2 className="text-xxl fw-bold text-center contact-heading">
         Contact me
       </h2>
@@ -79,7 +81,7 @@ const Contact = () => {
             type="submit"
             className="btn btn-light px-6 ms-auto me-auto d-block submit"
           >
-            Light
+            Send
           </button>
         </form>
       </div>

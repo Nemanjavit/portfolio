@@ -15,7 +15,7 @@ const Quote = () => {
             where i can help and be part of goals achivements.
           </p>
         </div>
-        <img src={bgmobile} />
+        <img alt="background" src={bgmobile} />
       </div>
     </div>
   );

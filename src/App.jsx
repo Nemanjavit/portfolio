@@ -6,6 +6,7 @@ import AboutMe from "./components/Sections/AboutMe";
 import Skills from "./components/Sections/Skills";
 import Portfolio from "./components/Sections/Portfolio";
 import Contact from "./components/Sections/Contact";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
       </header>
       <main>
+        <ToastContainer theme="colored" hideProgressBar autoClose={5000} />
         <Hero />
         <Quote />
         <AboutMe />

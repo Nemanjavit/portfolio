@@ -2,7 +2,7 @@ import LogoSvg from "../assets/svg/logoSvg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg main-nav p-0">
+    <nav className="navbar navbar-expand-lg main-nav py-2">
       <div className="container">
         <div className="w-100 d-flex justify-content-between">
           <a className="" href="#">
@@ -23,20 +23,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse menu" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-lg-0">
             <li className="nav-item text-center text-sm">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="#aboutme">
                 About me
               </a>
             </li>
             <li className="nav-item text-center text-sm">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#skills">
                 Skills
               </a>
             </li>
             <li className="nav-item text-center text-sm">
-              <a className="nav-link">Portfolio</a>
+              <a href="#portfolio" className="nav-link">
+                Portfolio
+              </a>
             </li>
             <li className="nav-item text-center text-sm">
-              <a className="nav-link">Contact me</a>
+              <a href="#contact" className="nav-link">
+                Contact me
+              </a>
             </li>
           </ul>
         </div>
