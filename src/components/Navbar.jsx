@@ -2,7 +2,7 @@ import LogoSvg from "../assets/svg/logoSvg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg main-nav py-2">
+    <nav className="navbar navbar-expand-lg main-nav">
       <div className="container">
         <div className="w-100 d-flex justify-content-between">
           <a className="" href="#">

@@ -1,8 +1,27 @@
 import { projects } from "../../utils/projects";
 import background from "../../assets/portfolioBg.png";
 import ProjectCard from "../ProjectCard";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/src/all";
+import gsap from "gsap";
 
 const Portfolio = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      ".heading",
+      { opacity: 0 },
+      {
+        scrollTrigger: {
+          trigger: ".portfolio",
+          start: "top 50%",
+        },
+        opacity: 1,
+      }
+    );
+  });
+
   return (
     <div id="portfolio" className="portfolio">
       <div className="spacer">
